@@ -8,8 +8,8 @@ format:
     toc-location: left
 ---
 
-**sfnetworks GitHub repo**: https://github.com/luukvdmeer/sfnetworks
-**webinar GitHub repo**: https://github.com/luukvdmeer/sfnetworks-webinar-sasa-2024
+- **sfnetworks GitHub repo**: https://github.com/luukvdmeer/sfnetworks
+- **webinar GitHub repo**: https://github.com/luukvdmeer/sfnetworks-webinar-sasa-2024
 
 ```{r}
 #| eval: false
@@ -606,16 +606,6 @@ net_clean |>
   activate(nodes) |>
   mutate(degree = centrality_degree()) |>
   pull(degree) |>
-  mean()
-```
-
-... or the average edge circuity.
-
-```{r}
-net_clean |>
-  activate(edges) |>
-  mutate(circuity = edge_circuity()) |>
-  pull(circuity) |>
   mean()
 ```
 
